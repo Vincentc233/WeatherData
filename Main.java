@@ -6,13 +6,14 @@ public class Main {
         for(double n : temps) t.add(n);
         WeatherData data1 = new WeatherData(t);
         data1.cleanData(85.0, 120.0);
-        //System.out.println(data1.returnArr());
-
+        System.out.println(data1.returnArr());
 
         double[] temps2 = {100.5, 98.5, 102.0, 103.9, 87.5, 105.2, 90.3, 94.8, 109.1, 102.1, 107.4, 93.2};
         ArrayList<Double> t2 = new ArrayList<Double>();
         for(double n : temps2) t2.add(n);
-        WeatherData data2 = new WeatherData(t);
+        WeatherData data2 = new WeatherData(t2);
         System.out.println(data2.longestHeatWave(100.5));
+
+        System.out.println(data2.longestHeatWave(95.2));
     }
 }
