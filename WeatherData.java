@@ -29,7 +29,6 @@ public class WeatherData
         for(int i = 0; i<temperatures.size(); i++){
             if(temperatures.get(i) > threshold) {
                 heatLength++;
-                System.out.println(heatLength);
             }
             else if(temperatures.get(i) <= threshold){
                 if(heatLength > maxHeatLength) maxHeatLength = heatLength;
